@@ -1,13 +1,123 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Solution module2 assignment Hans Fransen</title>
-<link rel="stylesheet" type="text/css" href="css/mdl2-sol.css">
-</head>
-<body>
-/* ff proberen */
-</body>
-</html>
+
+/******base styles******/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	border: 0;
+	padding: 1%;
+	background-color: silver;
+		}
+
+h1 { font-size: 175%;
+	margin: 20px;
+	margin-bottom:10px;
+	text-align: center;
+		}
+
+section {
+	font-size: 18px;
+	margin: 1%;
+	border: 2px solid black;
+	padding: 0px;
+	height: 170px;
+	overflow: hidden;
+	float: left;	
+	/** margin: 1%;
+		width: 31.3%;
+				**/
+	}
+
+h3 {
+	float: right;
+	font-size: 125%;
+	text-align: center;
+	height: 30px;
+	width: 120px;
+	padding: 2px;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 0px;
+			}
+
+p {
+	font-size: 18px;
+	clear: both;
+	padding: 10px;
+			}
+
+ #section1 {
+	background-color: #90EE90;
+			}
+	#section1 > p { 
+	background-color: #90EE90;
+	}
+	#section1 > h3 {
+	background-color: #3CB371;
+		} 		
+
+#section2 {
+	background-color: #FFFACD;
+			}
+	#section2 > p { 
+	background-color: #FFFACD;
+			}
+	#section2 > h3 {
+	background-color: #B0E0E6;
+			}			
+#section3 {
+	background-color: #87CEEB;
+			}
+	#section3 > p { 
+	background-color: #87CEEB;
+			}
+	#section3 > h3 {
+	background-color: #FFFF00;
+			}
+
+	/******large devices only******/
+	@media (min-width: 922px) {
+	section {
+	padding: 0px;
+	width: 31.3%;
+	float: left;	
+		}	
+		}
+	
+	/******medium devices only******/
+	@media (min-width: 768px) and (max-width: 921px) {
+		
+	#section1,#section2 {
+	float: left;
+	width: 48%;
+		}
+	#section3 {
+	clear: left;
+	width: 98%;
+		}	
+		}
+	
+	/******small devices only******/
+	@media (max-width: 767px) {
+	section {
+		margin-left: 3%;
+		margin-right: 3%;
+		clear: all;
+		width: 94%
+	}
 
 
+
+	
+	
+	
+	
+	
+	
